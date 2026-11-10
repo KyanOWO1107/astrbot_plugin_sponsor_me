@@ -1,0 +1,6 @@
+name: astrbot_plugin_sponsor_me
+display_name: 赞助我
+desc: 通过指令或对话中的主动赞助意图发送收款码和赞助链接，支持会话黑白名单。
+version: v0.1.0
+author: Kyan
+astrbot_version: ">=4.9.2"

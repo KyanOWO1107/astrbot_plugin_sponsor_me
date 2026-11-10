@@ -1,0 +1,33 @@
+{
+  "list_mode": {
+    "description": "会话名单模式",
+    "type": "string",
+    "options": ["whitelist", "blacklist"],
+    "default": "whitelist",
+    "hint": "whitelist：仅名单内启用，空名单全部不启用。blacklist：仅名单内禁用，空名单全部启用。"
+  },
+  "sessions": {
+    "description": "会话名单",
+    "type": "list",
+    "default": [],
+    "hint": "填写完整会话标识，每项一个。机器人管理员可在目标群聊或私聊使用 /赞助状态 查询。指令和对话触发共用此名单。"
+  },
+  "message": {
+    "description": "赞助文案",
+    "type": "text",
+    "default": "感谢你的支持，请按需选择赞助方式。",
+    "hint": "在收款码和链接前发送，可以留空。仅填写文案而未设置收款码或链接时，不会发送赞助信息。"
+  },
+  "images": {
+    "description": "收款码图片",
+    "type": "list",
+    "default": [],
+    "hint": "每项填写一个 HTTP(S) 图片地址或本地文件路径。相对路径以 data/plugin_data/astrbot_plugin_sponsor_me 为根；也支持 AstrBot 进程可读取的绝对路径。Docker 部署须填写容器内路径。"
+  },
+  "links": {
+    "description": "赞助链接",
+    "type": "list",
+    "default": [],
+    "hint": "每项填写一个 HTTP(S) 赞助或收款页面地址。触发后会发送全部链接和收款码。"
+  }
+}
